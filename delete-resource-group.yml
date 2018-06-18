@@ -1,0 +1,17 @@
+---
+- name: Create Azure Resource Group
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  vars_files:
+    - ./vars/vault.yml
+    - ./vars/vars.yml
+  roles:
+    - { role: Azure.azure_preview_modules }
+    - { role: az_delete_resource_group }
+    #- { role: az_create_virtual_network }
+    #- { role: az_create_virtual_subnet }
+    #- { role: az_create_network_security_group }
+    #- { role: az_create_network_interface_card }
+    #- { role: az_create_}
+...

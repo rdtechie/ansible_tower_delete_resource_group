@@ -1,0 +1,4 @@
+# from galaxy
+- src: Azure.azure_preview_modules
+- src: https://github.com/rdtechie/ansible_role_az_delete_resource_group
+  name: az_delete_resource_group
